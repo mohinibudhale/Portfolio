@@ -32,7 +32,7 @@
       .then(response => response.json())
       .then(data => {
         thisForm.querySelector('.loading').classList.remove('d-block');
-        if (data.success) {
+        if (data.ok) {
           thisForm.querySelector('.sent-message').classList.add('d-block');
           thisForm.reset();
         } else {
