@@ -36,13 +36,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+ 
 </head>
 
 <body>
@@ -142,12 +136,27 @@
 <section id="resume" class="resume">
   <div class="container">
     <div class="section-title">
-      <h2>Resume</h2>      
-    </div> 
-    <embed src="Resume_Mohini_Budhale.pdf" type="application/pdf" width="100%" height="800px" " />      
+      <h2>Resume</h2>
+    </div>
+    <div class="resume-container">
+      <iframe src="https://docs.google.com/viewer?url=https://example.com/path/to/Mohini_Budhale_Resume.pdf&embedded=true" width="100%" height="800px"></iframe>
+    </div>
   </div>
 </section>
 <!-- End Resume Section -->
+    <style>
+  .resume-container iframe {
+    width: 100%;
+    height: 100vh; 
+    border: none; 
+  }
+
+  @media (max-width: 768px) {
+    .resume-container iframe {
+      height: 100vh; 
+    }
+  }
+</style>
 
 <!-- Start Certifications Section -->
 <section id="certifications" class="certifications">
@@ -178,7 +187,7 @@
   </div>
 </section>
 
-    <section id="projects" class="section">
+   <section id="projects" class="section">
   <div class="container">
     <div class="section-title">
       <h2>Projects</h2>
@@ -186,21 +195,11 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="project-item">
-          <h3>Ohio School Employees Retirement System (OHSERS)</h3>
-          <p>Oct 2020 - Dec 2022</p>
+          <h3>Chicago Oriental Wholesale Market (COWM)</h3>
+          <p>Jan 2024 - Apr 2024</p>
           <ul>
-            <li>Developed code for determining pension payouts by understanding business requirements and collaborating with the client's upper management team for accuracy.</li>
-            <li>Utilized Java with Spring Framework and Maven for streamlined build automation to enhance system capabilities.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="project-item">
-          <h3>Ohio Department of Labor (Unemployment Insurance)</h3>
-          <p>Sep 2019 - Oct 2020</p>
-          <ul>
-            <li>Developed code for Ohio Unemployment System, focusing on claim management and record keeping.</li>
-            <li>Integrated JavaServer Faces (JSF) with HTML, CSS, and JavaScript for a dynamic user interface.</li>
+            <li>Helped implement a new feature involving QR code generation, automatic uploading to S3, PDF decoding, and AWS Lambda to create digital invoice records in RDS.</li>
+            <li>Troubleshot payments table search, allowing users to field accounts receivable inquiries more efficiently.</li>
           </ul>
         </div>
       </div>
@@ -209,15 +208,25 @@
           <h3>Inventory Management System</h3>
           <p>Sep 2023 - Dec 2023</p>
           <ul>
-            <li>Created foundational inventory management system integrating various functionalities.</li>
-            <li>Used Bootstrap, HTML, CSS, and JavaScript for UI development, and Spring framework, Hibernate ORM, MySQL, and Java for backend.</li>
-            <li>Deployed applications on AWS Lambda for scalability.</li>
+            <li>Developed an inventory management system using Java, Spring Boot, ORM with JPA and Hibernate, and Bootstrap for the frontend. Integrated customer, vendor, sales, purchase, product, and inventory data.</li>
+            <li>Deployed the system on AWS Elastic Beanstalk, utilizing its automated scaling, load balancing, and monitoring capabilities to ensure high availability and robust performance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="project-item">
+          <h3>Ohio School Employees Retirement System (OHSERS)</h3>
+          <p>Sep 2019 - Dec 2022</p>
+          <ul>
+            <li>Improved pension payout accuracy by resolving system errors and aligning calculations with the federal fiscal year. Collaborated with senior management to ensure compliance with budgeting and reporting standards, improving accuracy in pension benefit calculations.</li>
+            <li>Enhanced the efficiency of benefit claims by optimizing code, reducing processing times, and ensuring timely pension disbursements to retirees.</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
